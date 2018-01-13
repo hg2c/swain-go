@@ -9,3 +9,7 @@ vendor:
 .PHONY: image
 image:
 	./scripts/image.sh
+
+.PHONY: deploy-image
+deploy-image:
+	./scripts/deploy-image.sh

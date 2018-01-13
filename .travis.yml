@@ -1,0 +1,19 @@
+language: go
+
+services:
+  - docker
+
+go:
+  - 1.9.x
+
+install:
+  - go get -u github.com/golang/dep/cmd/dep
+  - go get -u github.com/golang/lint/golint
+
+script:
+  - make vendor
+  - make build
+  - make image
+
+after_success:
+  - make deploy-image
