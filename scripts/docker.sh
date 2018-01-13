@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -eu
 
-source './scripts/infer.sh'
+source './scripts/project.sh'
 
 echo "Make with Docker..."
 docker run --rm -ti \

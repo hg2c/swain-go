@@ -2,6 +2,10 @@
 build:
 	@./scripts/binary.sh
 
+.PHONY: dev
+dev:
+	@./scripts/docker.sh
+
 .PHONY: vendor
 vendor:
 	dep ensure
@@ -13,3 +17,7 @@ image:
 .PHONY: deploy-image
 deploy-image:
 	./scripts/deploy-image.sh
+
+.PHONY: cross
+cross:
+	@./scripts/cross.sh

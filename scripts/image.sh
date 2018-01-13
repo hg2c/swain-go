@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -eu -o pipefail
 
-source './scripts/infer.sh'
+source './scripts/project.sh'
 
 run docker build -t ${APP_IMAGE} -f Dockerfile .
