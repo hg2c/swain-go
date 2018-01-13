@@ -1,0 +1,6 @@
+APP_LANGUAGE="go"
+APP_NAME="swain-go"
+APP_PACKAGE="github.com/hg2c/swain-go"
+APP_VERSION=
+
+DOCKER_BUILD_IMAGE="hg2c/golang:alpine"

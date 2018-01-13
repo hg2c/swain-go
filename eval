@@ -1,0 +1,1 @@
+docker build -t hg2c/swain-go:53b41878-dirty -f Dockerfile .

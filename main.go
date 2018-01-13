@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello,", Magenta("Aurora"))
-	fmt.Println(Bold(Cyan("Cya!")))
+	fmt.Println("Hello,", Magenta("Golang"))
+	fmt.Println(Bold(Cyan(Version())))
 }
