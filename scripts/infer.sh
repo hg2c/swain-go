@@ -29,7 +29,8 @@ VERSION=${COMMIT}
 
 # check for changed files (not untracked files)
 # TODO dirty after ga .
-if [ -n "$(git diff --shortstat 2> /dev/null | tail -n1)" ]; then
+if [[ -n "$(git diff --cached --shortstat 2> /dev/null | tail -n1)" \
+         || -n "$(git diff --shortstat 2> /dev/null | tail -n1)" ]]; then
     COMMIT="${COMMIT}-dirty"
 fi
 
